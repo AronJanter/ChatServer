@@ -52,4 +52,4 @@ io.on("connection", function(socket) {
     });
 });
 
-server.listen(4000, () => console.log("corriendo en el puerto 4000"));
+server.listen(8000, () => console.log("corriendo en el puerto 8000"));
