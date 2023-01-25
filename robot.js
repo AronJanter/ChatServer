@@ -17,9 +17,20 @@ module.exports = async (rWit, indexChat) => {
 
     if ( Object.keys(resJson).length !== 0 ) {
         if ( indexChat == 0 ) {
-            robotRes = resJson["saludo"];
+            let respuesta = resJson["saludo"];
+            if ( typeof respuesta === "string" ) {
+                robotRes = resJson["saludo"];
+            }else  if ( typeof respuesta === "function" ) {
+                robotRes = resJson["saludo"]();
+            }
+           
         } else {
-            robotRes = resJson["despido"];
+            let despido = resJson["despido"];
+            if ( typeof despido === "string" ) {
+                robotRes = resJson["despido"];
+            }else  if ( typeof despido === "function" ) {
+                robotRes = resJson["despido"]();
+            }
         }
     }
 
