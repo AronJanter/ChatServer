@@ -17,21 +17,21 @@ module.exports = async () => {
                 "saludo": async function(ints, ents) {
                     // Aqui consultar a mysql
                     // Consultar a una API
-                    let {data} = await axios.get("http://lastpro-001-site1.btempurl.com/api/Producto");
-                    let result = (data.slice(0, 3).map((e) => {
-                        return `<div class="product-item"><a target="_blank" href='https://edan-01.github.io/sitioweblastmen.github.io/shop-single.html'><img width="32" src='https://cdn3d.iconscout.com/3d/premium/thumb/product-5806313-4863042.png'> ${e.nombreProducto}</a></div>`;
+                    let {data} = await axios.get("http://lastpro-001-site1.btempurl.com/api/Categoria");
+                    let result = (data.slice(0, 5).map((e) => {
+                        return `<div class="product-item"><a target="_blank" href='https://edan-01.github.io/sitioweblastmen.github.io/shop-single.html'><img width="32" src='https://cdn3d.iconscout.com/3d/premium/thumb/product-5806313-4863042.png'> ${e.nombreCategoria}</a></div>`;
                     })).join("");
-                    return `Claro, puedo sugerirte los siguientes productos: ${result}`;
+                    return `Claro, puedo sugerirte las siguientes categorias : ${result}`;
                 },
                 "saludoA": "Hola tenemos productos de las siguientes categorías: <br>-> Alimentos <br>-> Bebidas <br> -> Bienestar Natural <br>-> Cuidado Personal <br>-> Dietas Especiales <br>-> Medicina Natural",
                 "despido": async function(ints, ents) {
                     // Aqui consultar a mysql
                     // Consultar a una API
-                    let {data} = await axios.get("http://lastpro-001-site1.btempurl.com/api/Producto");
-                    let result = (data.slice(0, 3).map((e) => {
-                        return `<div class="product-item"><a target="_blank" href='https://edan-01.github.io/sitioweblastmen.github.io/shop-single.html'><img width="32" src='https://cdn3d.iconscout.com/3d/premium/thumb/product-5806313-4863042.png'> ${e.nombreProducto}</a></div>`;
+                    let {data} = await axios.get("http://lastpro-001-site1.btempurl.com/api/Categoria");
+                    let result = (data.slice(0, 5).map((e) => {
+                        return `<div class="product-item"><a target="_blank" href='https://edan-01.github.io/sitioweblastmen.github.io/shop-single.html'><img width="32" src='https://cdn3d.iconscout.com/3d/premium/thumb/product-5806313-4863042.png'> ${e.nombreCategoria}</a></div>`;
                     })).join("");
-                    return `Claro, puedo sugerirte los siguientes productos: ${result}`;
+                    return `Claro, puedo sugerirte las siguientes categorias : ${result}`;
                 },
                 "despidoA": "Tenemos productos de las siguientes categorías: <br>-> Alimentos <br>-> Bebidas <br> -> Bienestar Natural <br>-> Cuidado Personal <br>-> Dietas Especiales <br>-> Medicina Natural"
             },
