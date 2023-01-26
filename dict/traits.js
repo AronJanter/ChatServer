@@ -6,7 +6,11 @@ module.exports = async () => {
             "dialogar": {
                 "saludo": "Hola soy Aurori, tu asistente virtual estoy para ayudarlo en lo que necesite",
                 "despido": "Hola aun me encuentro disponible para ayudarle" //"Gracias por escribirnos, ante cualquier no dudes de avisarnos, estaremos gustosos de ayudarlo."                
-            },   
+            }, 
+            "ubicacion": {
+                "saludo": "Hola puedes ubicarnos en el siguiente enlace: <a href='https://edan-01.github.io/sitioweblastmen.github.io/'>Ingrese Aquí</a>",
+                "despido": "Hola puedes ubicarnos en el siguiente enlace: <a href='https://edan-01.github.io/sitioweblastmen.github.io/'>Ingrese Aquí</a>" //"Gracias por escribirnos, ante cualquier no dudes de avisarnos, estaremos gustosos de ayudarlo."                
+            },  
             "queja": {
                 "saludo": "Hola Lamentamos que tenga problemas con nuestros productos",
                 "despido": "Lamentamos que tenga problemas con nuestros productos" //"Lamentamos que presente problemas con nuestros productos estaremos mejorando."                
