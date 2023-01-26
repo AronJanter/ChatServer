@@ -8,15 +8,15 @@ module.exports = async () => {
                 "despido": "Hola aun me encuentro disponible para ayudarle" //"Gracias por escribirnos, ante cualquier no dudes de avisarnos, estaremos gustosos de ayudarlo."                
             }, 
             "Ubicacion": {
-                "saludo": "Hola puedes ubicarnos en el siguiente enlace: <a href='https://edan-01.github.io/sitioweblastmen.github.io/'>Ingrese Aquí</a>",
-                "despido": "Hola puedes ubicarnos en el siguiente enlace: <a href='https://edan-01.github.io/sitioweblastmen.github.io/'>Ingrese Aquí</a>" //"Gracias por escribirnos, ante cualquier no dudes de avisarnos, estaremos gustosos de ayudarlo."                
+                "saludo": "Hola puedes ubicarnos en el siguiente enlace: <a  href='https://edan-01.github.io/sitioweblastmen.github.io/' target='_blank'>Ingrese Aquí</a>",
+                "despido": "Hola puedes ubicarnos en el siguiente enlace: <a href='https://edan-01.github.io/sitioweblastmen.github.io/' target='_blank'>Ingrese Aquí</a>" //"Gracias por escribirnos, ante cualquier no dudes de avisarnos, estaremos gustosos de ayudarlo."                
             },  
             "queja": {
                 "saludo": "Hola Lamentamos que tenga problemas con nuestros productos",
                 "despido": "Lamentamos que tenga problemas con nuestros productos" //"Lamentamos que presente problemas con nuestros productos estaremos mejorando."                
             }            
         },
-        "trato_buscar": {
+        "trato_buscar": { 
             "e_producto_general": {
                 "saludo": async function(ints, ents) {
                     // Aqui consultar a mysql
