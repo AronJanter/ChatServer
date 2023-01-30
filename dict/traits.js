@@ -16,8 +16,8 @@ module.exports = async () => {
                 "despido": "Lamentamos que tenga problemas con nuestros productos" //"Lamentamos que presente problemas con nuestros productos estaremos mejorando."                
             } ,
             "agradecimiento": {
-                "saludo": "¡Nos alegra que te haya gustado la atención! ",
-                "despido": "🥰Por favor, comparte tu experiencia con tus familiares, amigos, seres más cercanos" //"Lamentamos que presente problemas con nuestros productos estaremos mejorando."                
+                "saludo": "¡Nos alegra que te haya gustado la atención! 🥰Por favor, comparte tu experiencia con tus familiares, amigos, seres más cercanos ",
+                "despido": "¡Nos alegra que te haya gustado la atención!🥰Por favor, comparte tu experiencia con tus familiares, amigos, seres más cercanos" //"Lamentamos que presente problemas con nuestros productos estaremos mejorando."                
             }             
         },
         "trato_buscar": { 
