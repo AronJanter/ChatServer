@@ -27,7 +27,7 @@ module.exports = async () => {
                     // Consultar a una API
                     let {data} = await axios.get("https://hostingweb0-001-site4.atempurl.com/api/Categoria");
                     let result = (data.slice(0, 5).map((e) => {
-                        return `<div class="product-item"><a target="_blank" href='https://edan-01.github.io/sitioweblastmen.github.io/shop.html'><img width="32" src='https://cdn3d.iconscout.com/3d/premium/thumb/product-5806313-4863042.png'> ${e.nombreCategoria}</a></div>`;
+                        return `<div class="product-item"><a target="_blank" href='https://edan-01.github.io/sitioweblastmen.github.io/products.html'><img width="32" src='https://cdn3d.iconscout.com/3d/premium/thumb/product-5806313-4863042.png'> ${e.nombreCategoria}</a></div>`;
                     })).join("");
                     return `Claro, puedo sugerirte las siguientes categorias : ${result}`;
                 },
@@ -37,7 +37,7 @@ module.exports = async () => {
                     // Consultar a una API
                     let {data} = await axios.get("https://hostingweb0-001-site4.atempurl.com/api/Categoria");
                     let result = (data.slice(0, 5).map((e) => {
-                        return `<div class="product-item"><a target="_blank" href='https://edan-01.github.io/sitioweblastmen.github.io/shop.html'><img width="32" src='https://cdn3d.iconscout.com/3d/premium/thumb/product-5806313-4863042.png'> ${e.nombreCategoria}</a></div>`;
+                        return `<div class="product-item"><a target="_blank" href='https://edan-01.github.io/sitioweblastmen.github.io/products.html'><img width="32" src='https://cdn3d.iconscout.com/3d/premium/thumb/product-5806313-4863042.png'> ${e.nombreCategoria}</a></div>`;
                     })).join("");
                     return `Claro, puedo sugerirte las siguientes categorias : ${result}`;
                 },
