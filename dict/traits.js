@@ -46,26 +46,8 @@ module.exports = async () => {
 
 
             "e_producto_cuidado_personal": {
-                "saludo": async function(ints, ents) {
-                    // Aqui consultar a mysql
-                    // Consultar a una API
-                    let {data} = await axios.get("https://hostingweb0-001-site4.atempurl.com/api/Producto");
-                    let result = (data.slice(0, 5).map((e) => {
-                        return `<div class="product-item"><a target="_blank" href='https://edan-01.github.io/sitioweblastmen.github.io/shop.html'><img width="32" src='https://cdn3d.iconscout.com/3d/premium/thumb/product-5806313-4863042.png'> ${e.nombreCategoria}</a></div>`;
-                    })).join("");
-                    return `Que producto sobre el cuidado personal desea : ${result}`;
-                },
-                "saludob": "Hola producto sobre el cuidado personal desea ",
-                "despido": async function(ints, ents) {
-                    // Aqui consultar a mysql
-                    // Consultar a una API
-                    let {data} = await axios.get("https://hostingweb0-001-site4.atempurl.com/api/Producto");
-                    let result = (data.slice(0, 5).map((e) => {
-                        return `<div class="product-item"><a target="_blank" href='https://edan-01.github.io/sitioweblastmen.github.io/shop.html'><img width="32" src='https://cdn3d.iconscout.com/3d/premium/thumb/product-5806313-4863042.png'> ${e.nombreCategoria}</a></div>`;
-                    })).join("");
-                    return `Que producto sobre el cuidado personal desea : ${result}`;
-                },
-                "despidob": "Que producto sobre el cuidado personal desea" //"."
+                "saludo": "Hola producto sobre el cuidado personal desea ",
+                "despido": "Que producto sobre el cuidado personal desea" //"."
             },
             "e_producto_dietas_especiales": {
                 "saludo": "Hola que producto sobre las dietas especiales desea",
